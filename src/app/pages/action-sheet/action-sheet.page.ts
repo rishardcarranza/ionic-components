@@ -10,6 +10,8 @@ export class ActionSheetPage implements OnInit {
 
     constructor(private actionSheetCtrl: ActionSheetController) {}
 
+    ngOnInit() {}
+
     async presentActionSheet() {
         const actionSheet = await this.actionSheetCtrl.create({
             header: 'Albums',

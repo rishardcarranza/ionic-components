@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioPage implements OnInit {
 
-    components: Component[] = [
+    components: CustomComponent[] = [
         {
             icon: 'american-football',
             name: 'Action Sheet',
@@ -17,6 +17,16 @@ export class InicioPage implements OnInit {
             icon: 'appstore',
             name: 'Alert',
             redirectTo: '/alert'
+        },
+        {
+            icon: 'beaker',
+            name: 'Avatar',
+            redirectTo: '/avatar'
+        },
+        {
+            icon: 'radio-button-on',
+            name: 'Botones y router',
+            redirectTo: '/buttons'
         }
     ];
 
@@ -27,7 +37,7 @@ export class InicioPage implements OnInit {
 
 }
 
-interface Component {
+interface CustomComponent {
     icon: string;
     name: string;
     redirectTo: string;
