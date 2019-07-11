@@ -1,11 +1,27 @@
 <app-header title="Grid - Rows"></app-header>
 
-<ion-content padding>
-    <ion-grid>
+<ion-content padding fullscreen>
+    <ion-grid fixed>
+        <!-- <ion-row>
+            <ion-col *ngFor="let c of [1,1,1,1,1,1,1,1,1,1,1,1]; let i = index;">
+                Columna {{i + 1}} 
+            </ion-col>
+        </ion-row> -->
+
         <ion-row>
-            <ion-col>Columna 1 </ion-col>
-            <ion-col>Columna 2 </ion-col>
-            <ion-col>Columna 3 </ion-col>
+            <ion-col    size="12" size-lg="3" size-md="4" size-sm="6" size-xs="12"
+                        *ngFor="let c of [1,1,1,1,1,1,1,1,1,1,1,1]; let i = index;">
+                <ion-card>
+                    <ion-img src="/assets/shapes.svg"></ion-img>
+                    <ion-card-header>
+                        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                        <ion-card-title>Card Title</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet voluptatibus consequuntur illo id delectus, voluptatum exercitationem consequatur aperiam eius, ex ab, asperiores sed? Nam iste soluta officia eos porro consequuntur!
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
         </ion-row>
     </ion-grid>
 
