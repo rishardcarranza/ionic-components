@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IonSegment } from '@ionic/angular';
+// import { IonSegment } from '@ionic/angular';
 import { DataService } from '../../services/data.service';
 import { Observable } from 'rxjs';
 
@@ -10,14 +10,14 @@ import { Observable } from 'rxjs';
 })
 export class SegmentPage implements OnInit {
 
-    @ViewChild(IonSegment) segment: IonSegment;
+    // @ViewChild(IonSegment) segment: IonSegment;
     superHeroes: Observable<any>;
     textoBuscar:string = '';
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-      this.segment.value = 'todos';
+    //   this.segment.value = 'todos';
       this.superHeroes = this.dataService.getHeroes();
   }
 
