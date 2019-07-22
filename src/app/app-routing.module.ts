@@ -24,6 +24,7 @@ const routes: Routes = [
   { path: 'search-bar', loadChildren: './pages/search-bar/search-bar.module#SearchBarPageModule' },
   { path: 'segment', loadChildren: './pages/segment/segment.module#SegmentPageModule' },
   { path: 'slides', loadChildren: './pages/slides/slides.module#SlidesPageModule' },
+  { path: 'tabs', loadChildren: './pages/tabs/tabs.module#TabsPageModule' },
 
 
 ];
